@@ -86,12 +86,17 @@ hr{
 	transform: rotate(-45deg);
 	top: 20px;
 }
-.navbar{
-    z-index: 99;
-}
-.navbar-toggler{
-    border: 0 !important
-    display: inline-block;
-    text-decoration: none;
+
+button:focus{
+    border: none;
     outline: none;
+    text-decoration: none;
+    
+}
+.navbar-dark .navbar-toggler{
+    border: none;
+    border-color: black;
+}
+ul{
+    display: block;
 }
