@@ -89,3 +89,9 @@ hr{
 .navbar{
     z-index: 99;
 }
+.navbar-toggler{
+    border: 0 !important
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
