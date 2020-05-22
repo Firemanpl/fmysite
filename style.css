@@ -1,0 +1,33 @@
+header {
+    position: relative;
+    background-color: black;
+    height: 50vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+nav{
+    max-height: 56px;
+    background-color: black;
+}
+.logo{
+    float:left;
+    height: 30px;
+    width: 30px;    
+}
