@@ -4,4 +4,43 @@
 header {
     padding: 156px 0 100px;
   }
-  
+  .ham {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color: black;
+}
+.ham_line {
+	position: absolute;
+	left: 9px;
+	width: 22px;
+	height: 2px;
+	background-color: white;
+}
+.ham_line1 {
+	top: 11px;
+  transition: all 0.3s;
+}
+.ham_line2 {
+	top: 18px;
+}
+.ham_line3 {
+	top: 25px;
+  transition: all 0.3s;
+}
+.clicked .ham_line1 {
+	transform: rotate(45deg);
+	top: 20px;
+}
+.clicked .ham_line2 {
+	width: 0px;
+}
+.clicked .ham_line3 {
+	transform: rotate(-45deg);
+	top: 20px;
+}
+.navbar-dark .navbar-toggler{
+    border-color: black;
+    outline: none;
+}

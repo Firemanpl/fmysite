@@ -21,24 +21,28 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="#">I like fire.</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="ham" id="ham">
+          <span class="ham_line ham_line1"></span>
+          <span class="ham_line ham_line2"></span>
+          <span class="ham_line ham_line3"></span>
+        </div>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent22">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="#">HOME
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#">MY PROJECTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -81,6 +85,12 @@ typewriter.typeString('Hi!')
     .pauseFor(2500)
     .start();
 
+</script>
+<script>
+ham.addEventListener('click', function() {
+	ham.classList.toggle('clicked');
+  menu_wrapper.classList.toggle('clicked');
+});
 </script>
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
