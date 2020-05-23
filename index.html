@@ -11,6 +11,7 @@
   <title></title>
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -43,10 +44,9 @@
       </div>
     </div>
   </nav>
-  <header class="bg-primary text-white">
+  <header class="bg-dark text-white">
     <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      <h1 id="app"></h1>
     </div>
   </header>
   <!-- Page Content -->
@@ -64,7 +64,24 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript -->
+<script>
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: false
+});
+
+typewriter.typeString('Hi!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I am fireman.')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('How can I help you ?')
+    .pauseFor(2500)
+    .start();
+
+</script>
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
