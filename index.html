@@ -21,8 +21,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="#">I like fire.</a>
-      <button id="hamburger" onclick="myFunction()" class="navbar-toggler third-button" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent22" aria-controls="navbarResponsive" aria-expanded="false"
+      <button onclick="myFunction()" class="navbar-toggler third-button" type="button" data-toggle="collapse"
+        data-target="#hamburger" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
         <div class="ham" id="ham">
           <span class="ham_line ham_line1"></span>
@@ -30,7 +30,7 @@
           <span class="ham_line ham_line3"></span>
         </div>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+      <div  class="collapse navbar-collapse" id="hamburger">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">HOME
@@ -93,11 +93,11 @@
     function myFunction(){
       var hamburger = document.getElementById('hamburger');
       var ham = document.getElementById('ham')
-      if (hamburger.className == 'navbar-toggler third-button collapsed') {
+      if (hamburger.className == 'navbar-collapse collapse') {
         console.log('navbar-off');
         ham.className='ham clicked'
         console.log(hamburger.className);
-      } else if (hamburger.className == 'navbar-toggler third-button'){
+      } else if (hamburger.className == 'navbar-collapse collapse show'){
         console.log('navbar-on');
         ham.className='ham'
         console.log(hamburger.className);
