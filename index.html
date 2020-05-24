@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title></title>
+  <title>My portfolio</title>
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -21,7 +21,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="#">I like fire.</a>
-      <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="hamburger" onclick="myFunction()" class="navbar-toggler third-button" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent22" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         <div class="ham" id="ham">
           <span class="ham_line ham_line1"></span>
           <span class="ham_line ham_line2"></span>
@@ -30,7 +32,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent22">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">HOME
               <span class="sr-only">(current)</span>
             </a>
@@ -68,30 +70,44 @@
     </div>
   </div>
 
-<script>
-var app = document.getElementById('app');
+  <script>
+    var app = document.getElementById('app');
 
-var typewriter = new Typewriter(app, {
-    loop: false
-});
+    var typewriter = new Typewriter(app, {
+      loop: false
+    });
 
-typewriter.typeString('Hi!')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('I am fireman.')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('How can I help you ?')
-    .pauseFor(2500)
-    .start();
+    typewriter.typeString('Hi!')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('I am fireman.')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('How can I help you ?')
+      .pauseFor(2500)
+      .start();
 
-</script>
-<script>
-ham.addEventListener('click', function() {
-	ham.classList.toggle('clicked');
-  menu_wrapper.classList.toggle('clicked');
-});
-</script>
+  </script>
+  <script>
+   
+    function myFunction(){
+      var hamburger = document.getElementById('hamburger');
+      var ham = document.getElementById('ham')
+      if (hamburger.className == 'navbar-toggler third-button') {
+        console.log('navbar-off');
+        console.log(hamburger.className);
+        ham.className='ham clicked'
+      } else {
+        console.log('navbar-on');
+        ham.className='ham'
+      }
+    }
+ /*
+    ham.addEventListener('click', function () {
+      ham.classList.toggle('clicked');
+    });
+    */
+  </script>
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
