@@ -93,13 +93,14 @@
     function myFunction(){
       var hamburger = document.getElementById('hamburger');
       var ham = document.getElementById('ham')
-      if (hamburger.className == 'navbar-toggler third-button') {
+      if (hamburger.className == 'navbar-toggler third-button collapsed') {
         console.log('navbar-off');
-        console.log(hamburger.className);
         ham.className='ham clicked'
-      } else {
+        console.log(hamburger.className);
+      } else if (hamburger.className == 'navbar-toggler third-button'){
         console.log('navbar-on');
         ham.className='ham'
+        console.log(hamburger.className);
       }
     }
  /*
