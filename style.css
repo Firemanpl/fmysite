@@ -83,4 +83,8 @@ header {
   border: none;
   background: transparent !important;
 }
- 
+
+svg {
+	height: 80px;
+	width: 100%;
+}
