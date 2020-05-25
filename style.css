@@ -83,7 +83,9 @@ header {
   background: transparent !important;
 }
 
-svg {
-	height: 80px;
+
+
+
+.bar img {
 	width: 100%;
 }
